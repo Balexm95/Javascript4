@@ -3,12 +3,14 @@ HARD: Create two buttons, one that when clicked turns the background of the body
 Create a single function that takes an input className and updates the body's classList to ONLY include that className
 *Note: Check Canvas for the starter code needed for this exercise. The starter code will be located in a folder named hard_js. 
 */
-document.querySelector("#red").addEventListener("click", function redBg() {
-    document.body.classList.add("red")
+document.querySelector("#red").addEventListener("click", function (className) {
+    if (className ==='red'){
+    document.body.classList.add(className)
     document.body.classList.remove("white")
-})
+}
+else if (className ==='white'){
 
-document.querySelector("#white").addEventListener("click", function whiteBg () {
-    document.body.classList.add("white")
-    document.body.classList.remove("red")
-})
+    document.body.classList.add(className)
+    document.body.classList.remove("red");
+}
+}

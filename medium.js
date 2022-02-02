@@ -32,3 +32,5 @@ function sum(arr, num) {
     return (arr.indexOf(num));
 }
 console.log(sum(nums, 0));
+
+
